@@ -1,0 +1,70 @@
+.teko-uniquifier {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.anima {
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+.anima:hover {
+  transform: scale(1.1); /* Aumentar el tamaño del elemento */
+}
+body {
+  background-color: black;
+}
+a {
+  text-decoration: none; /* Quita el subrayado de todos los enlaces */
+}
+.position-relative {
+  position: relative;
+}
+
+.blur-image {
+  filter: blur(5px); /* Ajusta el valor para más o menos desenfoque */
+  width: 100%; /* Asegúrate de que la imagen ocupe el ancho del contenedor */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0; /* Ajusta según sea necesario */
+  left: 0; /* Ajusta según sea necesario */
+  right: 0; /* Asegura que el texto se centre */
+  bottom: 0; /* Asegura que el texto esté centrado verticalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Cambia el color según tu diseño */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Mejora la legibilidad del texto */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Desplazamiento hacia abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 1s ease-in; /* Aplica la animación */
+}
+.modal-body img {
+  width: 50%; /* O el tamaño que prefieras */
+  height: auto; /* Mantiene la proporción */
+}
